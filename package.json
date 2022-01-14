@@ -1,0 +1,11 @@
+{
+  "name": "@imlinus/iffy",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "source/index.js",
+  "license": "0BSD",
+  "scripts": {
+    "test": "node test/test.js",
+    "test:file": "node source/cli.js test/test.iffy"
+  }
+}

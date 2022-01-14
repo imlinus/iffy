@@ -1,0 +1,37 @@
+▀ █▀▀ █▀▀ █ █
+█ █▀  █▀   █
+
+A human-readable configuration file format
+
+Its basically a blend of ini, toml & json
+Please consider using any of those over this weekend project
+
+```
+# This is a IFFY file
+
+[owner]
+name: ImLinus
+mail: mail@imlinus.com
+
+[database]
+server: 192.168.1.1
+ports: [2000, 3000, 4000]
+connections: 5000
+enabled: true
+```
+
+returns
+```
+{
+  owner: {
+    name: 'ImLinus',
+    mail: 'mail@imlinus.com'
+  },
+  database: {
+    server: '192.168.1.1',
+    ports: [2000, 3000, 4000],
+    connections: 5000,
+    enabled: true
+  }
+}
+```
